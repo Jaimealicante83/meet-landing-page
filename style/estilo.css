@@ -21,6 +21,11 @@ nav {
   margin-top: 4.8rem;
   margin-bottom: 6.4rem;
 }
+@media screen and (min-width: 1200px) {
+  nav {
+    margin-top: 8rem;
+  }
+}
 
 .hero {
   position: relative;
@@ -29,6 +34,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 6.4 auto 3.2rem auto;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -38,10 +44,11 @@ nav {
 .hero .imagen-hero-mobile {
   display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero .imagen-hero-mobile {
     display: block;
-    max-width: 100%;
+    max-width: 110%;
+    width: 110%;
   }
 }
 .hero .container {
@@ -309,7 +316,7 @@ footer .texts-container h2 {
 }
 footer .texts-container p {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 150%;
   color: #FAFAFA;
   margin-bottom: 2.4rem;

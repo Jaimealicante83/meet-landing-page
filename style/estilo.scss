@@ -29,6 +29,9 @@ nav{
     align-items: flex-end;
     margin-top: 4.8rem;
     margin-bottom: 6.4rem;
+    @media screen and (min-width:1200px){
+        margin-top: 8rem;
+    }
 }
 
 .hero{
@@ -38,13 +41,15 @@ nav{
     align-items: center;
     justify-content: center;
     margin: 6.4 auto 3.2rem auto;
+    overflow-x: hidden;
     @media screen and (min-width: 1200px){
         margin: 6.8 auto 6.4rem auto;
     }
     .imagen-hero-mobile{
-        @media screen and (max-width: 767px){
+        @media screen and (max-width: 1199px){
             display: block;
-            max-width: 100%;
+            max-width: 110%;
+            width: 110%;
         }
         display: none;
     }
@@ -285,7 +290,7 @@ footer{
         }
         p{
             font-size: 1.6rem;
-            font-weight: 300;
+            font-weight: 500;
             line-height: 150%;
             color: $white;
             margin-bottom: 2.4rem;
